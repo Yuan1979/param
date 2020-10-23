@@ -152,7 +152,7 @@ jobs:
         - pip install graphviz
       install:
         - pip install nbsite sphinx_holoviz_theme "nbconvert <=5.3.1"
-        - pip install --index-url https://test.pypi.org/simple/ nbsite --upgrade
+        - pip install --index-url https://test.pypi.org/simple/ nbsite --pre --upgrade
         - pip install -e .
       script:
         # TODO: nbsite commands will be simplified eventually...
